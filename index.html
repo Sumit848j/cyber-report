@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Officer Login</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/css/bootstrap.min.css" rel="stylesheet" />
+    <style>
+        body {
+            background: url('./assets/mpose.jpg') no-repeat center center fixed;
+            background-size: cover;
+        }
+
+        .container {
+            max-width: 400px;
+            margin-top: 50px;
+            background: rgba(255, 255, 255, 0.2);
+            backdrop-filter: blur(10px);
+            padding: 20px;
+            border-radius: 10px;
+            color: white;
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <h2 class="text-center">Officer Login</h2>
+        <form id="loginForm">
+            <div class="mb-3">
+                <label for="email" class="form-label">Email</label>
+                <input type="email" id="email" class="form-control" required />
+            </div>
+
+            <div class="mb-3">
+                <label for="password" class="form-label">Password</label>
+                <input type="password" id="password" class="form-control" required />
+            </div>
+
+            <button type="submit" class="btn btn-success w-100">Login</button>
+                <link href="file:///C:/Users/Sumit/Desktop/cyber%20report/cyber%20security.html" rel="stylesheet" />
+
+        </form>
+
+        <p class="text-center mt-3">New officer? <a href="officer_register.html" class="text-white">Register</a></p>
+    </div>
+
+    <script>
+document.getElementById("loginForm").addEventListener("submit", function(event) {
+    event.preventDefault();
+
+    const email = document.getElementById("email").value;
+    const password = document.getElementById("password").value;
+
+    if (email === "sumitjadhav@gmail.com" && password === "sumit123") {
+        alert("Login Successful!");
+        window.location.href = "cyber_security.html";
+    } else {
+        alert("Invalid Email or Password!");
+    }
+});
+</script>
+</body>
+</html>

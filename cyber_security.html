@@ -1,0 +1,91 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Cyber Crime Reporting Portal</title>
+<link rel="stylesheet" href="style4.css">
+</head>
+<body>
+
+<header>
+    <h1>Cyber Crime Reporting Portal</h1>
+    <p>Report Cyber Crimes Securely</p>
+</header>
+
+<nav>
+    <a href="">Report Crime</a>
+    <a href="#types">Crime Types</a>
+    <a href="#tips">Safety Tips</a>
+</nav>
+
+<section class="hero">
+    <h2>Protect Yourself From Cyber Crime</h2>
+    <p>Submit complaints related to online fraud, hacking, phishing, and more.</p>
+</section>
+
+<div class="container">
+
+    <div class="card" id="types">
+        <h2>Cyber Crime Categories</h2>
+        <ul>
+            <li>Online Financial Fraud</li>
+            <li>Phishing Attacks</li>
+            <li>Identity Theft</li>
+            <li>Social Media Hacking</li>
+            <li>Cyberbullying</li>
+            <li>Ransomware Attacks</li>
+            <li>Online Scams</li>
+            <li>Data Breaches</li>
+        </ul>
+    </div>
+
+    <div class="card" id="report">
+        <h2>Report Cyber Crime</h2>
+
+        <form id="crimeForm">
+            <input type="text" id="name" placeholder="Full Name" required>
+
+            <input type="email" id="email" placeholder="Email Address" required>
+
+            <input type="tel" id="phone" placeholder="Mobile Number" required>
+
+            <select id="crimeType" required>
+                <option value="">Select Crime Type</option>
+                <option>Online Fraud</option>
+                <option>Phishing</option>
+                <option>Identity Theft</option>
+                <option>Account Hacking</option>
+                <option>Cyberbullying</option>
+                <option>Other</option>
+            </select>
+
+            <textarea id="description" rows="5" placeholder="Describe the incident..." required></textarea>
+
+            <button type="submit">Submit Report</button>
+
+            <p id="message"></p>
+        </form>
+    </div>
+
+    <div class="card" id="tips">
+        <h2>Cyber Safety Tips</h2>
+        <ul>
+            <li>Use strong passwords.</li>
+            <li>Enable two-factor authentication.</li>
+            <li>Avoid suspicious links.</li>
+            <li>Keep software updated.</li>
+            <li>Never share OTPs.</li>
+        </ul>
+    </div>
+
+</div>
+<script>
+document.getElementById("crimeForm").addEventListener("submit", function(e) {
+    e.preventDefault();
+    window.location.href = "contact.html";
+});
+</script>
+</body>
+</html>
